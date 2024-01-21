@@ -13,11 +13,12 @@ public class Lab1Bai4 {
 	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Nhập a: ");
+		System.out.println("Nhập vào các hệ số của phương trình bậc 2");
+		System.out.print("Nhập hệ số a: ");
 		double a = scanner.nextDouble();
-		System.out.print("Nhập b: ");
+		System.out.print("Nhập hệ số b: ");
 		double b = scanner.nextDouble();
-		System.out.print("Nhập c: ");
+		System.out.print("Nhập hệ số c: ");
 		double c = scanner.nextDouble();
 		
 		double Delta = Math.pow(b,2) - 4*a*c;
