@@ -17,8 +17,8 @@ public class Lab1Bai3 {
 		System.out.print("Nhập vào độ dài cạnh: ");
 		double canh = scanner.nextDouble();	
 		
-		double theTich = canh * canh * canh;
+		double theTich = Math.pow(canh, 3);
 		
-		System.out.printf("Thể tích khối lập phương là: %f" , theTich);
+		System.out.printf("Thể tích khối lập phương là: " + theTich);
 	}
 }
