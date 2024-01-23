@@ -38,6 +38,16 @@ public class Lab2Bai2 {
 			if (delta < 0) {
 	            System.out.println("Phương trình vô nghiệm");
 			}
+			else if (delta == 0) {
+	            double x = -b / (2 * a);
+	            System.out.println("Phương trình có nghiệm kép: x = " + x);
+	        } else {
+	            double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+	            double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+	            System.out.println("Phương trình có hai nghiệm phân biệt:");
+	            System.out.println("x1 = " + x1);
+	            System.out.println("x2 = " + x2);
+	        }
 		}
 
 	}
