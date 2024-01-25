@@ -14,7 +14,8 @@ public class Lab2 {
 	public static void main(String[] args) {
 		//GiaiPTBac1();
 		//GiaiPTBac2();
-		tinhTienDien();
+		//tinhTienDien();
+		menu();
         }
 	
 	//Lab2Bai1
@@ -94,6 +95,40 @@ public class Lab2 {
             }
             System.out.println("Tiền điện phải thanh toán: " + tienDien + " VND");
         }
+    }
+	//Lab2Bai4
+	public static void menu() {
+        Scanner scanner = new Scanner(System.in);
+        int c;
+
+        do {
+            System.out.println("+---------------------------------------------------+");
+            System.out.println("1. Giải phương trình bậc nhất");
+            System.out.println("2. Giải phương trình bậc hai");
+            System.out.println("3. Tính tiền điện");
+            System.out.println("4. Kết thúc");
+            System.out.println("+---------------------------------------------------+");
+            System.out.print("Chọn chức năng: ");
+
+            c = scanner.nextInt();
+
+            switch (c) {
+                case 1:
+                    GiaiPTBac1();
+                    break;
+                case 2:
+                    GiaiPTBac2();
+                    break;
+                case 3:
+                    tinhTienDien();
+                    break;
+                case 4:
+                    System.out.println("Chương trình kết thúc.");
+                    break;
+                default:
+                    System.out.println("Chọn không hợp lệ. Vui lòng chọn lại!");
+            }
+        } while (c != 4);
     }
 }
 
