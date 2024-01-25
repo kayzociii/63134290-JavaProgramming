@@ -22,11 +22,16 @@ public class Lab1Bai4 {
 		double c = scanner.nextDouble();
 		
 		double Delta = Math.pow(b,2) - 4*a*c;
-		double canDelta = Math.sqrt(Delta);
+		System.out.println("Delta của phương trình bậc 2 là: " + Delta);
 		
-		System.out.printf("Delta của phương trình bậc 2 là: " + Delta);
-		System.out.println();
-		System.out.printf("Căn delta của phương trình bậc 2 là: " + canDelta);
+		if(Delta < 0) {
+			System.out.print("Không thể tính được căn delta vì delta < 0!");
+		}
+		else {
+			double canDelta = Math.sqrt(Delta);
+			System.out.printf("Căn delta của phương trình bậc 2 là: " + canDelta);
+		}
+			
 	}
 
 }
