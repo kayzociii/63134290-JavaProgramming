@@ -27,8 +27,13 @@ public class Lab3Bai3 {
 
         Arrays.sort(mang);
         System.out.println("Mảng sau khi sắp xếp: " + Arrays.toString(mang));
-
-
+        
+        int min = mang[0];
+        for (int i = 1; i < n; i++) {
+            min = Math.min(min, mang[i]);
+        }
+        System.out.println("Phần tử nhỏ nhất trong mảng: " + min);
+        
 	}
 
 }
