@@ -84,13 +84,16 @@ public class Lab2 {
         
         double tienDien = 0;
         
-        if (soDien <= 50) {
-            tienDien = soDien * 1000;
+        if (soDien < 0) {
+            System.out.println("Số điện không hợp lệ.");
         } else {
-            tienDien = 50 * 1000 + (soDien - 50) * 1200;
+            if (soDien <= 50) {
+                tienDien = soDien * 1000;
+            } else {
+                tienDien = 50 * 1000 + (soDien - 50) * 1200;
+            }
+            System.out.println("Tiền điện phải thanh toán: " + tienDien + " VND");
         }
-        
-        System.out.println("Tiền điện phải thanh toán: " + tienDien + " VND");
     }
 }
 
