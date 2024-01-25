@@ -13,7 +13,8 @@ public class Lab2 {
 	 */
 	public static void main(String[] args) {
 		//GiaiPTBac1();
-		GiaiPTBac2();
+		//GiaiPTBac2();
+		tinhTienDien();
         }
 	
 	//Lab2Bai1
@@ -74,6 +75,23 @@ public class Lab2 {
 	        }
 		}
 	}
+	//Lab2Bai3
+	public static void tinhTienDien() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Nhập số điện sử dụng trong tháng: ");
+        int soDien = scanner.nextInt();
+        
+        double tienDien = 0;
+        
+        if (soDien <= 50) {
+            tienDien = soDien * 1000;
+        } else {
+            tienDien = 50 * 1000 + (soDien - 50) * 1200;
+        }
+        
+        System.out.println("Tiền điện phải thanh toán: " + tienDien + " VND");
+    }
 }
 
 
