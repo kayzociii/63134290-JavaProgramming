@@ -43,7 +43,13 @@ public class Lab3Bai3 {
             }
         }
         
-        System.out.println("Số phần tử chia hết cho 3 là: " + dem);
+        double trungBinhCong;
+        if (dem == 0) {
+            trungBinhCong = 0;
+        } else {
+            trungBinhCong = (double) tong / dem;
+        }
+        System.out.println("Trung bình cộng các phần tử chia hết cho 3: " + trungBinhCong);
 	}
 
 }
