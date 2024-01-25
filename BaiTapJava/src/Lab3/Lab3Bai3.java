@@ -34,6 +34,16 @@ public class Lab3Bai3 {
         }
         System.out.println("Phần tử nhỏ nhất trong mảng: " + min);
         
+        int tong = 0;
+        int dem = 0;
+        for (int i = 0; i < n; i++) {
+            if (mang[i] % 3 == 0) {
+                tong += mang[i];
+                dem++;
+            }
+        }
+        
+        System.out.println("Số phần tử chia hết cho 3 là: " + dem);
 	}
 
 }
