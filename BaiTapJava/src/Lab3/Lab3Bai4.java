@@ -39,6 +39,7 @@ public class Lab3Bai4 {
             System.out.println("Sinh viên " + (i + 1) + ":");
             System.out.println("Họ tên: " + hoTen[i]);
             System.out.println("Điểm: " + diem[i]);
+            System.out.println("Học lực: " + xetHocLuc(diem[i]));
             System.out.println();
         }
 
@@ -64,5 +65,20 @@ public class Lab3Bai4 {
         }
     }
 
+
+    public static String xetHocLuc(double diem) {
+        if (diem < 5) {
+            return "Yếu";
+        } else if (diem < 6.5) {
+            return "Trung bình";
+        } else if (diem < 7.5) {
+            return "Khá";
+        } else if (diem < 9) {
+            return "Giỏi";
+        } else {
+            return "Xuất sắc";
+        }
+
+	}
 
 }
