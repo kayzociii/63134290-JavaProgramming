@@ -7,9 +7,28 @@ import java.util.Scanner;
  * 
  */
 class SanPham {
-	public String tenSp; 
-	public double donGia;
-	public double giamGia;
+	private String tenSp; 
+	private double donGia;
+	private double giamGia;
+	
+	public String getTenSp(){
+		return this.tenSp;
+	}
+	public void setTenSp(String tenSp){
+		this.tenSp = tenSp;
+	}
+	public double getdonGia() {
+		return this.donGia;
+	}
+	public void setdonGia(double donGia) {
+		this.donGia = donGia;
+	}
+	public double getgiamGia() {
+		return this.giamGia;
+	}
+	public void setgiamGia(double giamGia) {
+		this.giamGia = giamGia;
+	}
 	
 	public SanPham() {
 		
