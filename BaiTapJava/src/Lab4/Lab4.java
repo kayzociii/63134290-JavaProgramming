@@ -21,7 +21,7 @@ class SanPham {
 	}
 	
 	public double getThueNhapKhau() {
-		return 1/10 * donGia;
+		return 0.1 * donGia;
 	}
 	
 	public void xuat() {
@@ -29,7 +29,7 @@ class SanPham {
 		System.out.println("Tên sản phẩm: " + tenSp);
 		System.out.println("Đơn giá: " + donGia);
 		System.out.println("Giảm giá: " + giamGia);
-		System.out.printf("Thuế nhập khẩu: " , getThueNhapKhau());
+		System.out.println("Thuế nhập khẩu: " + getThueNhapKhau());
 	}
 	
 	public void nhap() {
@@ -46,9 +46,13 @@ public class Lab4 {
 	public static void main(String[] args) {
 		SanPham sp1 = new SanPham();
 		SanPham sp2 = new SanPham();
+		System.out.println("Nhập vào thông tin sản phẩm 1: ");
 		sp1.nhap();
+		System.out.println("Nhập vào thông tin sản phẩm 2: ");
 		sp2.nhap();
+		System.out.println("Sản phẩm 1: ");
 		sp1.xuat();
+		System.out.println("Sản phẩm 2: ");
 		sp2.xuat();
 	}
 }
