@@ -4,4 +4,4 @@ Tôi tên là Nguyễn Hoàng Đức Khang, hiện là sinh viên năm 3 ngành 
 ## Repo này dùng để làm gì?
 Lưu và push các BT thực hành của môn học
 ## License
-[Java](https://www.oracle.com/downloads/licenses/javase-license1.html)https://www.oracle.com/downloads/licenses/javase-license1.html)
+[Java](https://www.oracle.com/downloads/licenses/javase-license1.html/)
