@@ -12,9 +12,9 @@ public class Lab6Bai1 {
 		String tendem = LayTenDem(hoten);
 		String ten = LayTen(hoten);
 		
-		System.out.println("Họ: " + ho);
+		System.out.println("Họ: " + ho.toUpperCase());
 		System.out.println("Tên đệm: " + tendem);
-		System.out.println("Tên: " + ten);
+		System.out.println("Tên: " + ten.toUpperCase());
 	}
 	
 	public static String LayHo(String hoten) {
@@ -44,7 +44,7 @@ public class Lab6Bai1 {
 			return hoten.substring(index + 1, index2);
 		}
 		else {
-			return hoten;
+			return " ";
 		}
 	}
 }
