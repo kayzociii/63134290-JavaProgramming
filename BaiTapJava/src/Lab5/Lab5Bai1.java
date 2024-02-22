@@ -10,6 +10,7 @@ public class Lab5Bai1 {
      
         ArrayList<Double> ds = new ArrayList<>();
         
+        /*
         while(true){
         	Double x = scanner.nextDouble();
         	ds.add(x);
@@ -18,10 +19,20 @@ public class Lab5Bai1 {
         	break;
         	}
         }
+        */
+        System.out.print("Nhập vào số lượng số cần nhập: ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        for(int i = 0; i < n; i++) {
+        	System.out.print("Nhập vào số thứ " + (i + 1) +  ": ");
+        	double a = scanner.nextDouble();
+        	ds.add(a);
+        }
         
         System.out.println("Danh sách số thực vừa nhập:");
         for (double x : ds) {
-            System.out.print(x + " ");
+            System.out.print(x);
+            System.out.println();
         }
         
         
