@@ -14,17 +14,28 @@ public class Lab6Bai2 {
 			this.donGia = donGia;
 			this.hang = hang;
 		}
+		
+		public String getTenSp() {
+		    return tenSp;
+		}
+
+		public double getDonGia() {
+		    return donGia;
+		}
+
+		public String getHang() {
+		        return hang;
+		}
 	}
 	public static void main(String[] args) {
 		ArrayList<SanPham> ds = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
 		
 		nhap(ds, scanner);
-		
 		System.out.println("Danh sách sản phẩm Nokia: ");
         for(SanPham sp : ds) {
-        	if(sp.hang.equalsIgnoreCase("Nokia")) {
-        		xuat(ds);
+        	if(sp.getHang().equals("Nokia")) {
+        		xuat(sp);
         	}
         }
 	}
@@ -38,21 +49,21 @@ public class Lab6Bai2 {
             String tenSp = scanner.nextLine();
             System.out.print("Nhập giá sản phẩm thứ " + (i + 1) + ": ");
             Double donGia = scanner.nextDouble();
+            scanner.nextLine();
             System.out.print("Nhập hãng sản phẩm thứ " + (i + 1) + ": ");
             String hang = scanner.nextLine();
-            scanner.nextLine();
+            
             
             SanPham sp = new SanPham(tenSp, donGia, hang);
             ds.add(sp);
         }
 	}
 	
-	public static void xuat(ArrayList<SanPham> ds) {
-		for(SanPham sp : ds) {
-			System.out.println("Tên SP: " + sp.tenSp);
-			System.out.println("Giá SP: " + sp.donGia);
-			System.out.println("Hãng: " + sp.hang);
-		}
+	public static void xuat(SanPham sp) {
+		System.out.println("Tên SP: " + sp.getTenSp());
+		System.out.println("Giá SP: " + sp.getDonGia());
+		System.out.println("Hãng: " + sp.getHang());
+		System.out.println();
 	}
 
 }
