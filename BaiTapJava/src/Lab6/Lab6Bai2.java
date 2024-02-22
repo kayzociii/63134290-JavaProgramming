@@ -24,7 +24,7 @@ public class Lab6Bai2 {
 		}
 
 		public String getHang() {
-		        return hang;
+		    return hang;
 		}
 	}
 	public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class Lab6Bai2 {
 		nhap(ds, scanner);
 		System.out.println("Danh sách sản phẩm Nokia: ");
         for(SanPham sp : ds) {
-        	if(sp.getHang().equals("Nokia")) {
+        	if(sp.getHang().matches("Nokia")) {
         		xuat(sp);
         	}
         }
