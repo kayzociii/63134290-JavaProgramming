@@ -20,6 +20,7 @@ public class Lab5Bai1 {
         	}
         }
         */
+        
         System.out.print("Nhập vào số lượng số cần nhập: ");
         int n = scanner.nextInt();
         scanner.nextLine();
