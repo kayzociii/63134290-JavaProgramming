@@ -1,4 +1,4 @@
-package Lab7Bai2;
+package Lab7Bai234;
 
 public abstract class SinhVienPoly {
     private String hoTen;
